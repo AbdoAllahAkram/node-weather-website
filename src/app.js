@@ -7,7 +7,7 @@ const geocode = require('./utils/geocode')
 const forcast = require('./utils/forcast')
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 // Define pathes for Ecpress config
 const publicPath = path.join(__dirname, '../public');

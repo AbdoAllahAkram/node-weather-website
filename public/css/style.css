@@ -1,5 +1,6 @@
 body {
-    background-image: url("../img//background.jpg");
+    /* background-image: url("../img//background.jpg"); */
+    background-color: #1199bb;
     color: #ffffff;
     font-family: arial;
     margin: 0 auto;
@@ -38,6 +39,7 @@ p {
     margin: 15px auto;
     padding: 9px 26px;
     border-radius: 50px;
+    font-size: 30px;
 }
 
 .messages {
@@ -51,6 +53,5 @@ p {
 }
 
 .input-group {
-    max-width: 600px;
     margin: 70px auto 0;
 }
