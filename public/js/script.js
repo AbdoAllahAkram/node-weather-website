@@ -4,6 +4,8 @@ const messageOne = document.querySelector('#message-1')
 const messageTow = document.querySelector('#message-2')
 const messageThree = document.querySelector('#message-3')
 const messageFour= document.querySelector('#message-4')
+const messageFive = document.querySelector('#message-5')
+const messageSix = document.querySelector('#message-6')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -26,6 +28,9 @@ weatherForm.addEventListener('submit', (e) => {
             messageTow.textContent = data.summary;
             messageThree.textContent =data.humidity;
             messageFour.textContent =data.Location;
+            messageFive.textContent =data.temperatureHigh;
+            messageSix.textContent =data.temperatureLow;
+
             
         }
 

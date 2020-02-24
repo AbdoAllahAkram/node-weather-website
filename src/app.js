@@ -66,9 +66,11 @@ app.get('/weather', (req, res) => {
             }
 
             res.send({
-                Temperature: Math.round((forcastData.apparentTemperature-32) * 5/9 ) + '°C',
-                summary: forcastData.summary,
-                humidity: 'Humidity: ' + forcastData.humidity*100 +'%',
+                Temperature: Math.round((forcastData.currently.apparentTemperature-32) * 5/9 ) + '°C',
+                summary: forcastData.currently.summary,
+                humidity: 'Humidity: ' + forcastData.currently.humidity*100 +'%',
+                temperatureHigh: 'temperature High: ' + forcastData.daily.data[0].temperatureHigh,
+                temperatureLow: 'temperature Low: ' + forcastData.daily.data[0].temperatureLow,
                 Location: location
             })
 

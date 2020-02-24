@@ -11,7 +11,7 @@ const forcast = (latitude, longrude, callback) => {
         } else if(body.error) {
             callback('unable to find the location', undefined)
         } else {
-            callback(undefined, body.currently)
+            callback(undefined, body)
         }
 
     } )
