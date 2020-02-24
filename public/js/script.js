@@ -14,6 +14,8 @@ weatherForm.addEventListener('submit', (e) => {
     messageTow.textContent = '';
     messageThree.textContent =''
     messageFour.textContent =''
+    messageFive.textContent =''
+    messageSix.textContent = ''
 
     const location = search.value;
     
