@@ -9,7 +9,7 @@ const geocode = (adress, callback) => {
         if(error) {
             callback('unable to connect to location servecies!', undefined);
         } else if(body.features.length === 0) {
-            callback('unable to find the location, try anothe searsh', undefined);
+            callback('unable to find the location, try another searsh', undefined);
         } else {
             callback(undefined, {
                 latitude: body.features[0].center[1],
